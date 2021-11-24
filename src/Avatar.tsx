@@ -10,6 +10,7 @@ import {
 import GiftedAvatar from './GiftedAvatar'
 import { StylePropType, isSameUser, isSameDay } from './utils'
 import { Omit, IMessage, User, LeftRightStyle } from './Models'
+import { widthPercentageToDP as wp } from 'react-native-responsive-screen'
 
 const styles = {
   left: StyleSheet.create({
@@ -21,8 +22,8 @@ const styles = {
     },
     onBottom: {},
     image: {
-      height: 36,
-      width: 36,
+      height: wp(7.2),
+      width: wp(7.2),
       borderRadius: 18,
     },
   }),
@@ -35,8 +36,8 @@ const styles = {
     },
     onBottom: {},
     image: {
-      height: 36,
-      width: 36,
+      height: wp(7.2),
+      width: wp(7.2),
       borderRadius: 18,
     },
   }),
