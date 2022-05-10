@@ -14,6 +14,7 @@ import {
   StyleProp,
   ViewStyle,
   Platform,
+  Keyboard,
 } from 'react-native'
 
 import LoadEarlier from './LoadEarlier'
@@ -367,6 +368,8 @@ export default class MessageContainer<
           onEndReached={this.onEndReached}
           onEndReachedThreshold={0.1}
           {...this.props.listViewProps}
+          keyboardDismissMode='on-drag'
+          onScrollBeginDrag={Keyboard.dismiss}
         />
       </View>
     )
